@@ -60,7 +60,7 @@ class PIDController:
         #Adress max windup
         if self.error_sum_ > self.max_windup_ :
             self.error_sum_ = self.max_windup_
-        elif self.error_sum_ < -self.max_windup_
+        elif self.error_sum_ < -self.max_windup_ :
             self.error_sum_ = -self.max_windup_
 
         #proportianal part
